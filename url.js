@@ -1431,7 +1431,10 @@ if( document.title != "FLASHC :: 痞客邦 PIXNET :: " ) {
         //console.log("Title:["+article_title+"]");
         //console.log(newSiteURL(article_title));
         newSiteURLLocation = newSiteURL(article_title);
+        //if( newSiteURLLocation != '' )
+        //        document.getElementById("new_site_search").innerHTML= '新版網站此篇文章網址：<a href="'+newSiteURLLocation+'">'+article_title+'</a>' ;
         if( newSiteURLLocation != '' )
-                document.getElementById("new_site_search").innerHTML= '新版網站此篇文章網址：<a href="'+newSiteURLLocation+'">'+article_title+'</a>' ;
+                  location.href = newSiteURLLocation; //;document.getElementById("new_site_search").innerHTML= '新版網站此篇文章網址：<a href="'+newSiteURLLocation+'">'+article_title+'</a>' ;
+
 }
 
